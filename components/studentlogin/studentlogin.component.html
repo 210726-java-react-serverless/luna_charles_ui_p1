@@ -1,0 +1,25 @@
+<div id="login-component">
+    <div class="row justify-content-center">
+        <div class="form-signin col-6">
+            <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+
+            <div id="email-container" class="form-floating">
+                <input type="text" class="form-control" id="login-form-email" placeholder="email">
+                <label for="login-form-email">Email</label>
+            </div>
+
+            <div id="password-container" class="form-floating">
+                <input type="password" class="form-control" id="login-form-password" placeholder="Password">
+                <label for="login-form-password">Password</label>
+            </div>
+
+            <button id="login-form-button" class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div id="error-msg-container" class="col-6">
+            <br>
+            <p hidden id="error-msg" class="alert alert-danger"></p>
+        </div>
+    </div>
+</div>

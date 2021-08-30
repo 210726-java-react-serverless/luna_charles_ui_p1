@@ -1,0 +1,33 @@
+<div id="signup-component">
+    <main class="form-signin">
+        <form>
+          <h1 class="h3 mb-3 fw-normal">Please sign up</h1>
+
+          <div class="form-floating" id="firstname-container">
+            <input class="form-control" id="signup-form-firstname" placeholder="name@example.com">
+            <label for="floatingInput">First name</label>
+          </div>
+          <div class="form-floating" id="lastname-container">
+            <input class="form-control" id="signup-form-lastname" placeholder="name@example.com">
+            <label for="floatingInput">Last name</label>
+          </div>
+          <div class="form-floating" id="email-container">
+            <input type="email" class="form-control" id="signup-form-email" placeholder="name@example.com">
+            <label for="floatingInput">Email address</label>
+          </div>
+          <div class="form-floating" id="password-container">
+            <input type="password" class="form-control" id="signup-form-password" placeholder="Password">
+            <label for="floatingPassword">Password</label>
+          </div>
+          <div class="form-floating" id="password-container">
+            <input type="password" class="form-control" id="signup-form-password-confirm" placeholder="Password">
+            <label for="floatingPassword">Confirm your password</label>
+          </div>
+          <button class="w-100 btn btn-lg btn-primary" type="submit" id="signup-form-button">Sign up</button>
+        </form>
+      </main>
+
+      <div id="error-msg-container">
+        <p id="error-msg" class="alert alert-danger" hidden='true'></p>
+      </div>
+</div>

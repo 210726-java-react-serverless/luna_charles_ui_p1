@@ -1,0 +1,43 @@
+<div id="student-dashboard-container">
+    <!-- container for profile information -->
+    <div id="profile-info-container" class="row justify-content-center">
+        <!-- container for profile picture -->
+        <div id="profile-picture" class="col-3">
+            <img src="../../components/studentdashboard/studentIcon.png" alt="student icon" />
+        </div>
+        <!-- container for welcome message for student member -->
+        <div id="profile-info" class="col-3">
+            <h2>Welcome, </h2>
+            <!-- innerHTML updated in JavaScript -->
+            <h4 id="profile-email"> </h4>
+        </div>
+        <br>
+    </div>
+    <!-- button controls: choose your adventure -->
+    <h1></h1>
+    <button type="button" class="btn btn-secondary" id="student-course-button">All Courses</button>
+    <button type="button" class="btn btn-secondary" id="student-register-button">Register</button>
+    <button type="button" class="btn btn-secondary" id="student-unregister-button">Unregister</button>
+    <button type="button" class="btn btn-outline-secondary" id="student-info-button">Your Courses</button>
+    <!-- error messages below controls -->
+    <div id="error-msg-container">
+        <p hidden id="error-msg" class="alert alert-danger"></p>
+    </div>
+    <!-- container for information returned from All Courses and Your Courses -->
+    <!-- innerHTML updated in JavaScript -->
+    <div id="show-info-container">
+    </div>
+    <!-- container for Register/Unregister form -->
+    <!-- shown when it is needed, hidden otherwise -->
+    <div hidden id="show-form-container" style="width: 50%;">
+        <!-- form heading, changes between Register and Unregister -->
+        <h1 class="h3 mb-3 fw-normal" id="student-form-heading"></h1>
+        <!-- input for the number of the course being added -->
+        <div id="course-number-container" class="form-floating">
+            <input type="text" class="form-control" id="student-course-number" placeholder="course number">
+            <label for="student-course-number">Course Number</label>
+        </div>
+        <!-- button to register/unregister, innerText is changed in JavaScript -->
+        <button id="student-course-registration-button" class="w-100 btn btn-lg btn-primary" type="submit"></button>
+    </div>
+</div>

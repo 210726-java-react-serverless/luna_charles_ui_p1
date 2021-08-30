@@ -1,0 +1,150 @@
+<div id="faculty-dashboard-container">
+
+    <!-- container for profile information -->
+    <div id="profile-info-container" class="row justify-content-center">
+        <!-- container for profile picture -->
+        <div id="profile-picture" class="col-3">
+            <img src="../../components/facultydashboard/facultyIcon.png" alt="faculty icon" />
+        </div>
+        <!-- container for welcome message for faculty member -->
+        <div id="profile-info" class="col-3">
+            <h2>Welcome, </h2>
+            <!-- innerHTML updated in JavaScript -->
+            <h4 id="profile-email"> </h4>
+        </div>
+        <br>
+    </div>
+
+    <!-- container for buttons -->
+    <div id="button-container" class="row justify-content-center">
+        <div class="col-6">
+            <!-- button controls: choose your adventure -->
+            <button type="button" class="btn btn-secondary" id="faculty-view-courses-button">View Taught Courses</button>
+            <button type="button" class="btn btn-secondary" id="faculty-add-course-button">Add Course</button>
+            <button type="button" class="btn btn-secondary" id="faculty-edit-course-button">Change Course Details</button>
+            <button type="button" class="btn btn-secondary" id="faculty-remove-course-button">Remove Class</button>
+        </div>
+    </div>
+
+    <!-- container for information returned from Taught Courses -->
+    <!-- innerHTML updated in JavaScript -->
+    <div id="courses-container-container">
+        <br>
+        <div id="courses-container"></div>
+    </div>
+
+    
+    <!-- container for the Add Course form -->
+    <div id="add-course-container" class="row justify-content-center">
+        <div hidden id="add-course-form" class="form-add-course col-6">
+            <br>
+            <h1 class="h3 mb-3 fw-normal">Enter Course Details</h1>
+
+            <!-- input for the Course Number -->
+            <div id="add-course-number-container" class="form-floating">
+                <input type="text" class="form-control" id="add-course-number" placeholder="Number">
+                <label for="add-course-number">Course Number</label>
+            </div>
+
+            <!-- input for the Course Name -->
+            <div id="add-course-title-container" class="form-floating">
+                <input type="text" class="form-control" id="add-course-title" placeholder="Title">
+                <label for="add-course-title">Course Title</label>
+            </div>
+
+            <!-- input for the Course Description -->
+            <div id="add-course-description-container" class="form-floating">
+                <input type="text" class="form-control" id="add-course-description" placeholder="Description">
+                <label for="add-course-description">Course Description</label>
+            </div>
+
+            <!-- input for the Course Capacity -->
+            <div id="add-course-capacity-container" class="form-floating">
+                <input type="text" class="form-control" id="add-course-capacity" placeholder="Capacity">
+                <label for="add-course-capacity">Course Capacity</label>
+            </div>
+            <br>
+
+            <!-- button to submit the course -->
+            <button id="add-course-form-button" class="w-100 btn btn-lg btn-success" type="submit">Add Course</button>
+        </div>
+
+        <!-- Container for the error message used when faculty user enters invalid data into the form-->
+        <div class="row justify-content-center">
+            <div id="add-course-error-msg-container" class="col-6">
+                <br>
+                <p hidden id="add-course-error-msg" class="alert alert-danger"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- container for the Edit Course form -->
+    <div id="edit-course-container" class="row justify-content-center">
+        <div hidden id="edit-course-form" class="form-edit-course col-6">
+
+            <br>
+            <h1 class="h3 mb-3 fw-normal">Update Course Details</h1>
+            
+            <!-- container for the dropdown used to select an existing course -->
+            <!-- innerHTML updated in JavaScript -->
+            <div id="edit-course-number-container" class="form-floating">
+                <select class="form-control" id="edit-course-number">
+                </select>
+            </div>
+    
+            <!-- container for the dropdown used to select a field to edit -->
+            <div id="edit-course-field-container" class="form-floating">
+                <select class="form-control" id="edit-course-field">
+                    <option>number</option>
+                    <option>name</option>
+                    <option>description</option>
+                    <option>capacity</option>
+                </select>
+            </div>
+
+            <!-- container for the textbox used to enter a new value -->
+            <div id="edit-course-value-container" class="form-floating">
+                <input type="text" class="form-control" id="edit-course-value" placeholder="Capacity">
+                <label for="edit-course-value">New Value</label>
+            </div>
+            <br>
+            
+            <!-- button to submit the edits -->
+            <button id="edit-course-form-button" class="w-100 btn btn-lg btn-warning" type="submit">Update Course</button>
+        </div>
+        <!-- Container for the error message used when faculty user enters invalid data into the form-->
+        <div class="row justify-content-center">
+            <div id="edit-course-error-msg-container" class="col-6">
+                <br>
+                <p hidden id="edit-course-error-msg" class="alert alert-danger"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- container for the Remove Course form -->
+    <div id="remove-course-container" class="row justify-content-center">
+        <div hidden id="remove-course-form" class="form-remove-course col-6">
+            <br>
+            <h1 class="h3 mb-3 fw-normal">Enter Course Number</h1>
+
+            <!-- container for the dropdown used to select an existing course to remove -->
+            <!-- innerHTML updated in JavaScript -->
+            <div id="remove-course-number-container" class="form-floating">
+                <select class="form-control" id="remove-course-number">
+                </select>
+            </div>
+            <br>
+            <!-- button to submit the course for deletion -->
+            <button id="remove-course-form-button" class="w-100 btn btn-lg btn-danger" type="submit">Delete Course</button>
+        </div>
+
+        <!-- Container for the error message used when faculty user enters invalid data into the form-->
+        <div class="row justify-content-center">
+            <div id="remove-course-error-msg-container" class="col-6">
+                <br>
+                <p hidden id="remove-course-error-msg" class="alert alert-danger"></p>
+            </div>
+        </div>
+    </div>
+
+</div>
